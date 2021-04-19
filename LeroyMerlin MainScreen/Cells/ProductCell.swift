@@ -9,7 +9,7 @@ import UIKit
 
 class ProductCell: UICollectionViewCell {
 
-    static let reuseId = "video-cell-reuse-identifier"
+    static let reuseId = "productCell"
     
     let imageView = UIImageView()
     let titleLabel = UILabel()

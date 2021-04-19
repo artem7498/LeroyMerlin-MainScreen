@@ -40,7 +40,7 @@ class ViewController: UIViewController {
                 return cell
 
             default:
-                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "video-cell-reuse-identifier", for: indexPath) as! ProductCell
+                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ProductCell.reuseId, for: indexPath) as! ProductCell
                 cell.configureCell(with: section)
                 return cell
             }

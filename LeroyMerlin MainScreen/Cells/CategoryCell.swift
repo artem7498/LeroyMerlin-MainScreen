@@ -10,7 +10,7 @@ import UIKit
 
 class CategoryCell: UICollectionViewCell {
     
-    static var reuseId: String = "WaitingChatCell"
+    static var reuseId: String = "CategoryCell"
     
     let imageView = UIImageView()
     
@@ -24,8 +24,8 @@ class CategoryCell: UICollectionViewCell {
         self.clipsToBounds = true
     }
     
-    func configureCell(with chat: MSection) {
-        imageView.image = UIImage(named: chat.image)
+    func configureCell(with item: MSection) {
+        imageView.image = UIImage(named: item.image)
     }
     
     required init?(coder: NSCoder) {

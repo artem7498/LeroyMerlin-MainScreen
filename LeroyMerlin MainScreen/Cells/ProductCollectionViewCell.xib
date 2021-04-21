@@ -56,9 +56,9 @@
             </constraints>
             <size key="customSize" width="156" height="196"/>
             <connections>
-                <outlet property="categoryLabel" destination="WKp-Lk-QLC" id="dGD-G9-bYx"/>
                 <outlet property="imageView" destination="j9P-uc-8Dc" id="KvJ-0S-jPe"/>
-                <outlet property="titleLabel" destination="eem-Yg-LPD" id="695-4H-F7w"/>
+                <outlet property="nameLabel" destination="WKp-Lk-QLC" id="dGD-G9-bYx"/>
+                <outlet property="priceLabel" destination="eem-Yg-LPD" id="695-4H-F7w"/>
             </connections>
             <point key="canvasLocation" x="5.7971014492753632" y="-6.6964285714285712"/>
         </collectionViewCell>

@@ -16,8 +16,8 @@ class ProductCollectionViewCell: UICollectionViewCell {
     }
     
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
     
     
     override func awakeFromNib() {
@@ -28,10 +28,10 @@ class ProductCollectionViewCell: UICollectionViewCell {
 //        imageView.layer.borderColor = UIColor.black.cgColor
     }
     
-    func configureCell(with chat: MSection) {
-        titleLabel.text = chat.price
-        categoryLabel.text = chat.name
-        imageView.image = UIImage(named: chat.image)
+    func configureCell(with item: MSection) {
+        priceLabel.text = "\(item.price) ₽/шт"
+        nameLabel.text = item.name
+        imageView.image = UIImage(named: item.image)
     }
 
 }

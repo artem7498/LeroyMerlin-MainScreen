@@ -23,7 +23,8 @@ class ViewController: UIViewController {
         
         collectionView.collectionViewLayout = layout()
         collectionView.register(CategoryCell.self, forCellWithReuseIdentifier: CategoryCell.reuseId)
-        collectionView.register(ProductCell.self, forCellWithReuseIdentifier: ProductCell.reuseId)
+        collectionView.register(ProductCollectionViewCell.nib(), forCellWithReuseIdentifier: ProductCollectionViewCell.reuseId)
+//        collectionView.register(ProductCell.self, forCellWithReuseIdentifier: ProductCell.reuseId)
         collectionView.register(SectionHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: SectionHeader.reuseId)
         
         createDataSource()
@@ -40,9 +41,15 @@ class ViewController: UIViewController {
                 return cell
 
             default:
-                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ProductCell.reuseId, for: indexPath) as! ProductCell
+                
+                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ProductCollectionViewCell.reuseId, for: indexPath) as! ProductCollectionViewCell
                 cell.configureCell(with: section)
                 return cell
+                
+//                          реализация для программной ячейки ProductCell
+//                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ProductCell.reuseId, for: indexPath) as! ProductCell
+//                cell.configureCell(with: section)
+//                return cell
             }
         })
         

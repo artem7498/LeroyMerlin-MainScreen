@@ -14,6 +14,8 @@
 		AC130619262D647F00F7B1C4 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC130618262D647F00F7B1C4 /* CategoryCell.swift */; };
 		AC13061D262D687500F7B1C4 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC13061C262D687500F7B1C4 /* SectionHeader.swift */; };
 		AC130625262D743A00F7B1C4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC130624262D743A00F7B1C4 /* Extensions.swift */; };
+		ACA65E42262ED68A00E32DCC /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA65E40262ED68A00E32DCC /* ProductCollectionViewCell.swift */; };
+		ACA65E43262ED68A00E32DCC /* ProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACA65E41262ED68A00E32DCC /* ProductCollectionViewCell.xib */; };
 		ACC470DA262AD48300AB4C62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC470D9262AD48300AB4C62 /* AppDelegate.swift */; };
 		ACC470DC262AD48300AB4C62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC470DB262AD48300AB4C62 /* SceneDelegate.swift */; };
 		ACC470DE262AD48300AB4C62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC470DD262AD48300AB4C62 /* ViewController.swift */; };
@@ -30,6 +32,8 @@
 		AC130618262D647F00F7B1C4 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		AC13061C262D687500F7B1C4 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		AC130624262D743A00F7B1C4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		ACA65E40262ED68A00E32DCC /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		ACA65E41262ED68A00E32DCC /* ProductCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCollectionViewCell.xib; sourceTree = "<group>"; };
 		ACC470D6262AD48300AB4C62 /* LeroyMerlin MainScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LeroyMerlin MainScreen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC470D9262AD48300AB4C62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACC470DB262AD48300AB4C62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,8 +68,10 @@
 			isa = PBXGroup;
 			children = (
 				AC130618262D647F00F7B1C4 /* CategoryCell.swift */,
-				AC130601262C3EF700F7B1C4 /* ProductCell.swift */,
+				ACA65E40262ED68A00E32DCC /* ProductCollectionViewCell.swift */,
+				ACA65E41262ED68A00E32DCC /* ProductCollectionViewCell.xib */,
 				AC13061C262D687500F7B1C4 /* SectionHeader.swift */,
+				AC130601262C3EF700F7B1C4 /* ProductCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -171,6 +177,7 @@
 			files = (
 				ACC470E6262AD48300AB4C62 /* LaunchScreen.storyboard in Resources */,
 				ACC470F8262BD50E00AB4C62 /* Assets.xcassets in Resources */,
+				ACA65E43262ED68A00E32DCC /* ProductCollectionViewCell.xib in Resources */,
 				ACC470E1262AD48300AB4C62 /* Main.storyboard in Resources */,
 				AC130607262D34C400F7B1C4 /* model.json in Resources */,
 			);
@@ -185,6 +192,7 @@
 			files = (
 				ACC470DE262AD48300AB4C62 /* ViewController.swift in Sources */,
 				AC130625262D743A00F7B1C4 /* Extensions.swift in Sources */,
+				ACA65E42262ED68A00E32DCC /* ProductCollectionViewCell.swift in Sources */,
 				AC13060F262D397000F7B1C4 /* MSectionCollection.swift in Sources */,
 				ACC470DA262AD48300AB4C62 /* AppDelegate.swift in Sources */,
 				AC130619262D647F00F7B1C4 /* CategoryCell.swift in Sources */,

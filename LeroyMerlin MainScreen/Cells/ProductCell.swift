@@ -8,7 +8,8 @@
 import UIKit
 
 class ProductCell: UICollectionViewCell {
-
+// Этот класс ячейки не использован в проекте
+//    можно сделать ячейку товара программно
     static let reuseId = "productCell"
     
     let imageView = UIImageView()

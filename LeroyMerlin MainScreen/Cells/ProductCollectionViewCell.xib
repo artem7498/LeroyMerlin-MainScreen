@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ProductCollectionViewCell" customModule="LeroyMerlin_MainScreen" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="138" height="196"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="138" height="196"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="j9P-uc-8Dc">
+                        <rect key="frame" x="0.0" y="0.0" width="138" height="138"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="j9P-uc-8Dc" secondAttribute="height" multiplier="2:2" id="u18-AZ-Oai"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="G2V-pP-i69">
+                        <rect key="frame" x="0.0" y="141" width="138" height="55"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$234 p/pc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eem-Yg-LPD">
+                                <rect key="frame" x="0.0" y="0.0" width="138" height="18.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product name Product nameProduct nameProduct nameProduct name" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKp-Lk-QLC">
+                                <rect key="frame" x="0.0" y="18.5" width="138" height="36.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="WKp-Lk-QLC" firstAttribute="height" secondItem="eem-Yg-LPD" secondAttribute="height" multiplier="2" id="ms9-EE-aa0"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="j9P-uc-8Dc" firstAttribute="trailing" secondItem="gTV-IL-0wX" secondAttribute="trailing" id="24h-uk-7lV"/>
+                <constraint firstItem="j9P-uc-8Dc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="29Y-xZ-3a5"/>
+                <constraint firstItem="G2V-pP-i69" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="GyJ-sa-fGa"/>
+                <constraint firstAttribute="bottom" secondItem="G2V-pP-i69" secondAttribute="bottom" id="KsG-VC-W8Y"/>
+                <constraint firstAttribute="trailing" secondItem="G2V-pP-i69" secondAttribute="trailing" id="Sfg-vx-3yv"/>
+                <constraint firstItem="G2V-pP-i69" firstAttribute="top" secondItem="j9P-uc-8Dc" secondAttribute="bottom" constant="3" id="hnE-VY-S1a"/>
+                <constraint firstItem="j9P-uc-8Dc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="lxP-2d-Gz4"/>
+            </constraints>
+            <size key="customSize" width="156" height="196"/>
+            <connections>
+                <outlet property="categoryLabel" destination="WKp-Lk-QLC" id="dGD-G9-bYx"/>
+                <outlet property="imageView" destination="j9P-uc-8Dc" id="KvJ-0S-jPe"/>
+                <outlet property="titleLabel" destination="eem-Yg-LPD" id="695-4H-F7w"/>
+            </connections>
+            <point key="canvasLocation" x="5.7971014492753632" y="-6.6964285714285712"/>
+        </collectionViewCell>
+    </objects>
+</document>

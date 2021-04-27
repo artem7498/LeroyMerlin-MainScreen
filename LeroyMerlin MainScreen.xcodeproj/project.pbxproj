@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC0F08032636C80500F4A4B4 /* NavBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC0F08022636C80500F4A4B4 /* NavBar.xib */; };
+		AC0F08072636D13500F4A4B4 /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0F08062636D13500F4A4B4 /* NavBar.swift */; };
 		AC130602262C3EF700F7B1C4 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC130601262C3EF700F7B1C4 /* ProductCell.swift */; };
 		AC130607262D34C400F7B1C4 /* model.json in Resources */ = {isa = PBXBuildFile; fileRef = AC130606262D34C400F7B1C4 /* model.json */; };
 		AC13060B262D375800F7B1C4 /* MSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC13060A262D375800F7B1C4 /* MSection.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC0F08022636C80500F4A4B4 /* NavBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavBar.xib; sourceTree = "<group>"; };
+		AC0F08062636D13500F4A4B4 /* NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBar.swift; sourceTree = "<group>"; };
 		AC130601262C3EF700F7B1C4 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		AC130606262D34C400F7B1C4 /* model.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = model.json; sourceTree = "<group>"; };
 		AC13060A262D375800F7B1C4 /* MSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSection.swift; sourceTree = "<group>"; };
@@ -55,6 +59,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC0F08132637CBA500F4A4B4 /* NavBarViews */ = {
+			isa = PBXGroup;
+			children = (
+				AC0F08022636C80500F4A4B4 /* NavBar.xib */,
+				AC0F08062636D13500F4A4B4 /* NavBar.swift */,
+			);
+			path = NavBarViews;
+			sourceTree = "<group>";
+		};
 		AC130609262D374200F7B1C4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +119,7 @@
 				ACC470D9262AD48300AB4C62 /* AppDelegate.swift */,
 				ACC470DB262AD48300AB4C62 /* SceneDelegate.swift */,
 				ACC470DD262AD48300AB4C62 /* ViewController.swift */,
+				AC0F08132637CBA500F4A4B4 /* NavBarViews */,
 				AC130609262D374200F7B1C4 /* Model */,
 				AC130622262D73F400F7B1C4 /* Cells */,
 				AC130623262D742400F7B1C4 /* Extensions */,
@@ -178,6 +192,7 @@
 				ACC470E6262AD48300AB4C62 /* LaunchScreen.storyboard in Resources */,
 				ACC470F8262BD50E00AB4C62 /* Assets.xcassets in Resources */,
 				ACA65E43262ED68A00E32DCC /* ProductCollectionViewCell.xib in Resources */,
+				AC0F08032636C80500F4A4B4 /* NavBar.xib in Resources */,
 				ACC470E1262AD48300AB4C62 /* Main.storyboard in Resources */,
 				AC130607262D34C400F7B1C4 /* model.json in Resources */,
 			);
@@ -197,6 +212,7 @@
 				ACC470DA262AD48300AB4C62 /* AppDelegate.swift in Sources */,
 				AC130619262D647F00F7B1C4 /* CategoryCell.swift in Sources */,
 				AC130602262C3EF700F7B1C4 /* ProductCell.swift in Sources */,
+				AC0F08072636D13500F4A4B4 /* NavBar.swift in Sources */,
 				AC13061D262D687500F7B1C4 /* SectionHeader.swift in Sources */,
 				AC13060B262D375800F7B1C4 /* MSection.swift in Sources */,
 				ACC470DC262AD48300AB4C62 /* SceneDelegate.swift in Sources */,

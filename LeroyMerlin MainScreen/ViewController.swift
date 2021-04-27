@@ -25,6 +25,11 @@ class ViewController: UIViewController {
         collectionView.register(CategoryCell.self, forCellWithReuseIdentifier: CategoryCell.reuseId)
         collectionView.register(ProductCollectionViewCell.nib(), forCellWithReuseIdentifier: ProductCollectionViewCell.reuseId)
 //        collectionView.register(ProductCell.self, forCellWithReuseIdentifier: ProductCell.reuseId)
+        
+//        let headerNib = UINib.init(nibName: "NavBar", bundle: Bundle.main)
+//        collectionView.register(headerNib, forHeaderFooterViewReuseIdentifier: "DemoHeaderView")
+//        collectionView.register(headerNib, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "NavBar")
+        
         collectionView.register(SectionHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: SectionHeader.reuseId)
         
         createDataSource()
@@ -58,7 +63,7 @@ class ViewController: UIViewController {
             guard let sectionHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: SectionHeader.reuseId, for: indexPath) as? SectionHeader else {return nil}
             guard let firstSection = self.dataSource?.itemIdentifier(for: indexPath) else {return nil}
             guard let section = self.dataSource?.snapshot().sectionIdentifier(containingItem: firstSection) else {return nil}
-            
+            print(indexPath)
             if section.title.isEmpty {return nil}
             
             sectionHeader.title.text = section.title
@@ -130,11 +135,17 @@ class ViewController: UIViewController {
 }
 
 extension ViewController{
+
     private func setupNavigationBarItems(){
         title = "Поиск товаров"
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
-        
+
+
+//        searchController.searchBar.textField?.font = nil
+//        searchController.searchBar.changePlaceholderColor(.brown)
+
+
         let appearance = UINavigationBarAppearance()
         let leroyColor = UIColor(red: 113/255, green: 191/255, blue: 84/255, alpha: 1.0)
                 appearance.backgroundColor = leroyColor
@@ -145,7 +156,7 @@ extension ViewController{
 //                navigationController?.navigationBar.standardAppearance = appearance
                 navigationController?.navigationBar.compactAppearance = appearance
                 navigationController?.navigationBar.scrollEdgeAppearance = appearance
-        
+
     }
 
 }

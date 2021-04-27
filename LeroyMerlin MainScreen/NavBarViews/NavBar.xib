@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavBar" customModule="LeroyMerlin_MainScreen" customModuleProvider="target">
+            <connections>
+                <outlet property="barcodeButton" destination="x4y-Iq-fFF" id="8Eb-BA-JBk"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="ab0-bB-Vfe"/>
+                <outlet property="searchButton" destination="Ywi-JC-JXC" id="KyY-ZX-1IR"/>
+                <outlet property="titleLabel" destination="Zgf-9M-iXt" id="jCd-Mh-Rny"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="186"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hoF-md-Tr2">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="186"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ywi-JC-JXC">
+                            <rect key="frame" x="15" y="110" width="323" height="46"/>
+                            <state key="normal" backgroundImage="searchB"/>
+                            <connections>
+                                <action selector="startSearch:" destination="-1" eventType="touchUpInside" id="Yhb-VK-or0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4y-Iq-fFF">
+                            <rect key="frame" x="353" y="110" width="46" height="46"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="46" id="Psp-68-5ZB"/>
+                                <constraint firstAttribute="width" constant="46" id="eRy-ub-ug3"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="barcode"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Поиск товаров" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zgf-9M-iXt">
+                            <rect key="frame" x="15" y="58" width="247" height="42"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.46476973846905068" green="0.79495005838206279" blue="0.34507473672321548" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="Ywi-JC-JXC" firstAttribute="top" secondItem="Zgf-9M-iXt" secondAttribute="bottom" constant="10" id="7PB-wX-stv"/>
+                        <constraint firstItem="Ywi-JC-JXC" firstAttribute="leading" secondItem="hoF-md-Tr2" secondAttribute="leading" constant="15" id="JNg-VS-35m"/>
+                        <constraint firstItem="x4y-Iq-fFF" firstAttribute="baseline" secondItem="Ywi-JC-JXC" secondAttribute="baseline" id="Nb2-NR-tcD"/>
+                        <constraint firstItem="Zgf-9M-iXt" firstAttribute="leading" secondItem="hoF-md-Tr2" secondAttribute="leading" constant="15" id="VgF-aM-9lb"/>
+                        <constraint firstAttribute="bottom" secondItem="x4y-Iq-fFF" secondAttribute="bottom" constant="30" id="YOF-JV-9gH"/>
+                        <constraint firstItem="x4y-Iq-fFF" firstAttribute="leading" secondItem="Ywi-JC-JXC" secondAttribute="trailing" constant="15" id="h7Z-Kd-vVh"/>
+                        <constraint firstAttribute="trailing" secondItem="x4y-Iq-fFF" secondAttribute="trailing" constant="15" id="iXo-Vu-NJq"/>
+                        <constraint firstItem="x4y-Iq-fFF" firstAttribute="top" secondItem="Ywi-JC-JXC" secondAttribute="top" id="uMD-BP-aXI"/>
+                        <constraint firstItem="x4y-Iq-fFF" firstAttribute="firstBaseline" secondItem="Ywi-JC-JXC" secondAttribute="firstBaseline" id="udt-BJ-L4E"/>
+                        <constraint firstItem="x4y-Iq-fFF" firstAttribute="bottom" secondItem="Ywi-JC-JXC" secondAttribute="bottom" id="ziF-FL-I9k"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.8589765922" green="0.96235281230000003" blue="0.94512001459999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="hoF-md-Tr2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="5jJ-YU-Qo0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hoF-md-Tr2" secondAttribute="trailing" id="Naa-lf-D0i"/>
+                <constraint firstItem="hoF-md-Tr2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ZWj-Tr-QX0"/>
+                <constraint firstItem="hoF-md-Tr2" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="fQc-bZ-4Wv"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="34.782608695652179" y="108.48214285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="barcode" width="132" height="131"/>
+        <image name="searchB" width="1242" height="185"/>
+    </resources>
+</document>
